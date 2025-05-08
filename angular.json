@@ -52,6 +52,15 @@
               ],
               "outputHashing": "all"
             },
+            "stanging":{
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.stanging.ts"
+                }
+
+              ]
+            },
             "development": {
               "optimization": false,
               "extractLicenses": false,
@@ -71,6 +80,9 @@
           "configurations": {
             "production": {
               "buildTarget": "Boilerplate1:build:production"
+            },
+            "stanging": {
+              "buildTarget": "Boilerplate1:build:stanging"
             },
             "development": {
               "buildTarget": "Boilerplate1:build:development"
